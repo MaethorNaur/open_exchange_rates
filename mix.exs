@@ -19,7 +19,6 @@ defmodule OpenExchangeRates.Mixfile do
 
   def application do
     [
-      mod: {OpenExchangeRates, []},
       applications: [:logger, :httpoison, :currency_formatter]
     ]
   end
