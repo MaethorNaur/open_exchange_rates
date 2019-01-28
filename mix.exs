@@ -26,13 +26,13 @@ defmodule OpenExchangeRates.Mixfile do
 
   defp deps do
     [
-      {:httpoison, "~>0.9.0"},
-      {:poison, "~>2.2.0"},
-      {:exvcr, "~>0.8.1", only: [:dev, :test]},
+      {:httpoison, "~>1.0"},
+      {:poison, "~>3.1.0"},
+      {:exvcr, "~>0.10", only: [:dev, :test]},
       {:credo, "~>0.4.7", only: [:dev, :test]},
       {:mix_test_watch, "~>0.2.6", only: [:dev, :test]},
       {:ex_doc, "~>0.13.0", only: [:dev, :test]},
-      {:excoveralls, "~> 0.5", only: :test},
+      {:excoveralls, "~> 0.10.4", only: :test},
       {:currency_formatter, "~>0.4.2"}
     ]
   end
