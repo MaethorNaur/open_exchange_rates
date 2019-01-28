@@ -29,7 +29,7 @@ defmodule OpenExchangeRates.Client do
       {:ok, data} ->
         {:error, data["description"]}
 
-       ->
+      _ ->
         {:error, "Could not parse the JSON : #{inspect(body)}"}
     end
   end
